@@ -132,6 +132,14 @@ dragmap:
   - tests/csv/3.0/fastq_single.csv
   - tests/test_aligner_dragmap.yml
 
+### minimap2
+minimap2:
+  - conf/modules/aligner.config
+  - modules/nf-core/minimap2/align/**
+  - subworkflows/local/fastq_align_bwamem_mem2_dragmap_sentieon/**
+  - tests/csv/3.0/fastq_single.csv
+  - tests/test_aligner_minimap2.yml
+
 ### sentieon/bwamem
 sentieon/bwamem:
   - conf/modules/aligner.config
